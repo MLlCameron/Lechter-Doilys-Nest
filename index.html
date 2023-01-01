@@ -32,6 +32,43 @@
 				padding-right: 10px;
 			}
 		</style>
+
+		<script type="text/javascript" src="/extension/ma/design/ma_user/javascript/libs/jquery-1.12.4.min.js" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			
+			/*
+			var months = {fluctus: 0, Manus: 0};
+
+			//get day of year 1-366
+			var now = new Date();
+			var start = new Date(now.getFullYear(), 0, 0);
+			var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
+			var oneDay = 1000 * 60 * 60 * 24;
+			var gregDay = Math.floor(diff / oneDay);
+
+			var offset = 0;
+
+			gregDay += offset;
+
+			var alberlondMonth = false;
+			var alberlondDay = false;
+			var stopFlag = false;
+
+			$.each(months,function(k,v){
+				if(v<=gregDay && !stop){
+					alberlondMonth = k;
+					alberlondDay = gregDay;
+					stopFlag = true;
+				}else{
+					gregDay -= v;
+				}
+			});
+
+			$("#day-id").text(alberlondDay);
+			$("#month-id").text(alberlondMonth);
+			/*
+		</script>
+
 	</head>
 
 	<body>
@@ -59,7 +96,21 @@
 			Articles
 		</h2>
 
-		<table border="1">
+		<table border="1" width="350">
+			<tr>
+				<th colspan="3">January 2023</th>
+			</tr>
+
+			<tr>
+				<td>1st</td>
+				<td><a href="misfires.html">When Missiles Miss</a></td>
+				<td>Rules</td>
+			</tr>
+		</table>
+
+		<br>
+
+		<table border="1" width="350">
 			<tr>
 				<th colspan="3">December 2022</th>
 			</tr>
